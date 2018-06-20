@@ -1,4 +1,5 @@
 # ciscoconf
+
 Ciscoconf is a simple shell script which backups the running and the startup configuration of Cisco Routers.
 The script uses expect to establish a telnet or ssh connection to a specific Router.
 Then it will fetch the current configuration and compare it with the last known config.
@@ -7,7 +8,8 @@ If the configuration has changed, ciscoconf will save the new config in a specia
 
 Requires expect and sendmail to be installed on the machine.
 
-2. Using ciscoconf
+# Using ciscoconf
+
 For automation a list of divices can be provided in the divices file.
 
 Format: mode;host;name;passwort;user|(secret-passwort;[user])
